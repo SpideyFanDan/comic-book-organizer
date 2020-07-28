@@ -5,9 +5,10 @@ A React app that calls from Comic Vine API to produce a list of comics in your c
 ## Wireframes
 
 ### Main page
-
+![Main page]
 ### Add to List page
-
+![Add to List page]
 ### Comic Book List page
-
+![Comic Book List page]
 ### Comic Book Individual Info page
+![Individual Comic Book page]
