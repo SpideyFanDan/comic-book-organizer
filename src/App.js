@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-// import axios from 'axios';
+import { Route, Link, Redirect } from 'react-router-dom';
 import Search from './Search';
 import Header from './Header';
 
