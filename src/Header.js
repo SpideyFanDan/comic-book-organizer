@@ -3,8 +3,8 @@ import React from 'react';
 function Header(props) {
     return (
         <div>
-            <header className="title">Comic Books Search</header>
-            <p>Home</p>
+            <header className="title">Comic Books<nav id="search">Search</nav></header>
+            
         </div>
     );
 }

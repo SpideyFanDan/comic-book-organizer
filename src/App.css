@@ -10,7 +10,15 @@ body {
 	background-color: rgb(220, 216, 216);
 }
 header {
-	font-size: 1.6rem;
+	background: rgb(63, 6, 6);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+nav {
+	font-size: 2rem;
 }
 small {
 	font-size: 1.2rem;
@@ -39,8 +47,8 @@ small {
 	font-size: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.75);
 	transition: background-color 250ms;
-  border-radius: 5px;
-  margin-top: 10px;
+	border-radius: 5px;
+	margin-top: 10px;
 }
 .search-button:hover {
 	background-color: rgba(63, 62, 62, 0.85);
@@ -53,7 +61,7 @@ small {
 	border: none;
 	outline: none;
 	background: none;
-	background-color: #EEE;
+	background-color: #eee;
 	border-radius: 8px;
 	font-size: 20px;
 	font-weight: 300;
