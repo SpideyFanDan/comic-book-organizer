@@ -1,12 +1,12 @@
 import React from 'react';
+import { Route, Link, Redirect } from 'react-router-dom';
 
 function Header(props) {
-    return (
-        <div>
-            <header className="title">Comic Books<nav id="search">Search</nav></header>
-            
-        </div>
-    );
+	return (
+		<header>
+			<h1 className='title'>Comic Books</h1>
+		</header>
+	);
 }
 
 export default Header;

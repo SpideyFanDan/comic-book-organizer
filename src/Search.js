@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ComicBookInfo from './ComicBookInfo';
+import { Route, Link } from 'react-router-dom';
 
 function Search() {
 	const [query, setQuery] = useState('');
@@ -7,9 +9,9 @@ function Search() {
 		event.preventDefault();
 		const cors = 'https://cors-anywhere.herokuapp.com/';
 		const url = `${cors}https://comicvine.gamespot.com/api/search/?api_key=${process.env.REACT_APP_COMICVINE_API_KEY}&format=json&sort=name:asc&resources=issue&query=${query}`;
-        try {
+		try {
 			const res = await fetch(url);
-            const data = await res.json();
+			const data = await res.json();
 			setComicBooks(data.results);
 		} catch (err) {
 			console.error(err);
@@ -33,14 +35,23 @@ function Search() {
 					Search
 				</button>
 			</form>
+			{/* <Link> */}
 			<div className='comics-list'>
 				{comicBooks.map((comicBook) => (
 					<div className='results' id={comicBook.id}>
-						<img className='tiny-image' src={comicBook.image.icon_url} alt={comicBook.volume.name + 'cover'} />
-                <p>{comicBook.volume.name}, issue # {comicBook.issue_number}, publication date: {comicBook.cover_date}</p>
+						<img
+							className='tiny-image'
+							src={comicBook.image.icon_url}
+							alt={comicBook.volume.name + 'cover'}
+						/>
+						<span className='comics-list-span'>
+							{comicBook.volume.name}, vol. # {comicBook.volume.number}, iss. #{' '}
+							{comicBook.issue_number}, pub. date: {comicBook.cover_date}
+						</span>
 					</div>
 				))}
 			</div>
+			{/* </Link> */}
 		</section>
 	);
 }
