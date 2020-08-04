@@ -15,7 +15,7 @@ class App extends Component {
 					<nav id='home'>Home</nav>
 				</Link>
 				<Link to='/search'><nav id='search'>Search</nav></Link> */}
-				// <Header />
+				 <Header />
 				<main>
 					{/* <Route
 						path='/search'

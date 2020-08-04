@@ -8,7 +8,7 @@ function Search() {
 	const searchTitle = async (event) => {
 		event.preventDefault();
 		const cors = 'https://cors-anywhere.herokuapp.com/';
-		const url = `${cors}https://comicvine.gamespot.com/api/search/?api_key=${process.env.REACT_APP_COMICVINE_API_KEY}&format=json&sort=name:asc&resources=issue&query=${query}`;
+		const url = `${cors}https://comicvine.gamespot.com/api/search/?api_key=${process.env.REACT_APP_COMICVINE_API_KEY}&format=json&sort=name:asc&resources=issue&query=${query}&limit=100`;
 		try {
 			const res = await fetch(url);
 			const data = await res.json();
