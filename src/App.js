@@ -11,10 +11,6 @@ class App extends Component {
 	render() {
 		return (
 			<div className='container'>
-				{/* <Link to='/'>
-					<nav id='home'>Home</nav>
-				</Link>
-				<Link to='/search'><nav id='search'>Search</nav></Link> */}
 				 <Header />
 				<main>
 					{/* <Route
