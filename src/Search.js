@@ -45,8 +45,8 @@ function Search() {
 							alt={comicBook.volume.name + 'cover'}
 						/>
 						<span className='comics-list-span'>
-							{comicBook.volume.name}, vol. # {comicBook.volume.number}, iss. #{' '}
-							{comicBook.issue_number}, pub. date: {comicBook.cover_date}
+							{comicBook.volume.name}, iss. #{comicBook.issue_number}, pub.
+							date: {comicBook.cover_date}
 						</span>
 					</div>
 				))}
