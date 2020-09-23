@@ -6,7 +6,7 @@ import './fonts/AVENGEANCE_HEROIC_AVENGER_BD.ttf';
 import './fonts/ComicHelvetic_Medium.otf';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './images/comicbook-box.png';
 ReactDOM.render(
 	<React.StrictMode>
 		<App />
